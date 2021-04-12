@@ -1665,7 +1665,7 @@ hr {
 /* page title
 ---------------------------------------------------------------------- */
 #page-title {
-	background: url(../images/portfolio-01.jpg) no-repeat fixed;
+	background: url(../images/portfolio-01.webp) no-repeat fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
