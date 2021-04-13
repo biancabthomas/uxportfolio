@@ -152,7 +152,7 @@
 				<div class="c2">
 				<p class="lead animate-this">Hi my name is Bianca. Welcome to my second website UX Design Process. This website focuses mainly on User Experience (UX) Design. My first website shows a little of my UX Design work, so with this website, you get more insight of the UX Design Projects.<br></p><p class="lead2 animate-this">Here is a little backstory about me. I am a George Mason University Alumni with a Bachelor's degree in  <a href="https://bis.gmu.edu/" style="color: #07617d; font-weight: 500; text-decoration: none;" target="_blank" rel="noopener">Individualized Study</a> and a minor in <a href="https://art.gmu.edu/" style="color: #07617d; font-weight: 500; text-decoration: none;" target="_blank" rel="noopener">Web Design</a>. I have 4 years of experience in graphic design. One of the key points about me is I like challenging myself on projects I have never done before. As I explored more about UX, I have done my research to learn more about UX Design.</p>
 				   </div>
-				   <a href="bbt-resume.pdf" download><button class="animate-this">Download Resume</button></a>
+				   <a href="bbt-resume.pdf" target="_blank"><button class="animate-this">Download Resume</button></a>
 				   </div>
 				</div>
 
@@ -563,13 +563,16 @@
 
    		<div class="row">
 			<div class="copyright">
-				<script type="text/JavaScript">
-					var theDate=new Date();
-					document.write("Copyright  &copy;" + theDate.getFullYear() + " Bianca B. Thomas</b>");
-				</script>
+        <p>Copyright &copy; <span id="year"></span> Bianca B. Thomas</p>
 			 </div>
 
 	      </div> <!-- end row -->
+
+        <script>
+        var date = new Date().getFullYear();
+
+document.getElementById("year").innerHTML = date;
+        </script>
 
    	</div> <!-- end footer-main -->
 

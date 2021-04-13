@@ -203,10 +203,13 @@
    <footer>
 
 
-		<script type="text/JavaScript">
-			var theDate=new Date();
-			document.write("Copyright  &copy; " + theDate.getFullYear() + " Bianca B. Thomas</b>");
-		</script>
+     <p>Copyright &copy; <span id="year"></span> Bianca B. Thomas</p>
+
+     <script>
+     var date = new Date().getFullYear();
+
+ document.getElementById("year").innerHTML = date;
+     </script>
 
 		<div id="go-top2">
 			<a class="smoothscroll" title="Back to Top" href="#top">
