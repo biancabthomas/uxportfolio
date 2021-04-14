@@ -1272,9 +1272,9 @@ header .header-logo a {
   transition: all 0.5s ease-in-out;
 }
 
-header .header-logo a:hover .main1 {
-  display: none;
-  opacity: 0;
+header .header-logo a img {
+  position: absolute;
+  left:0;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1282,20 +1282,8 @@ header .header-logo a:hover .main1 {
   transition: all 0.3s ease-in-out;
 }
 
-header .header-logo a .main2 {
-  display: none;
+header .header-logo a .main2:hover {
   opacity: 0;
-}
-
-header .header-logo a:hover .main2 {
-  display: inherit;
-  opacity: 1;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
 }
 
 /* -------------------------------------------------------------------
@@ -1461,31 +1449,16 @@ header .header-logo a:hover .main2 {
 #menu-nav-wrap .header-social-list li:last-child {
   margin: 0;
 }
-
-#menu-nav-wrap .header-social-list li a:hover .main1 {
-  display: none;
-  opacity: 0;
+#menu-nav-wrap .header-social-list a img {
+  position: absolute;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-#menu-nav-wrap .header-social-list li a .main2 {
-  display: none;
+#menu-nav-wrap .header-social-list a .main2:hover {
   opacity: 0;
-}
-
-#menu-nav-wrap .header-social-list li a:hover .main2 {
-  display: inherit;
-  opacity: 1;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
 }
 #menu-nav-wrap .close-button {
   display: block;
@@ -1660,31 +1633,20 @@ header .header-logo a:hover .main2 {
 .home-social-list li a:active {
   color: #EDA953;
 }
-
-.home-social-list li a:hover .main1 {
-  display: none;
-  opacity: 0;
+.home-social-list .img-fixer {
+  width: 37px;
+}
+.home-social-list a img {
+  position: absolute;
+  left:0;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
-.home-social-list li a .main2 {
-  display: none;
+.home-social-list a .main2:hover {
   opacity: 0;
-}
-
-.home-social-list li a:hover .main2 {
-  display: inherit;
-  opacity: 1;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  pointer-events: none;
 }
 
 /* scroll down */
@@ -1783,7 +1745,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   .home-content-tablecell h1 br {
     display: none;
   }
-
+  .home-social-list .img-fixer {
+    width: 27px;
+  }
   .home-social-list {
     left: 36px;
     bottom: 30px;
@@ -1902,6 +1866,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   line-height: 1.3;
   color: #522A44;
   margin-top: 5px;
+  width: 100%;
   text-align: left;
 }
 
@@ -1909,7 +1874,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   font-family: "Rubik", serif;
   font-size: 20px;
   letter-spacing: 150% !important;
-  line-height: 1.2;
+  line-height: 1.3;
   color: #522A44;
   margin-top: 5px;
   text-align: left;
@@ -1923,7 +1888,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 .c {
   float: right;
   width: 50%;
-  padding: 10px;
+  padding: 0;
 }
 
 .c2 {
@@ -1940,7 +1905,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 #img2 {
-  width: 1000px;
+  width: 89%;
 }
 
 button {

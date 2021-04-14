@@ -838,30 +838,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	transition: all 0.5s ease-in-out;
   }
 
-	#page-title .header-logo a:hover .main1 {
-	  display: none;
-	  opacity: 0;
-	  -moz-transition: all 0.3s ease-in-out;
+	#page-title .header-logo a img {
+		position: absolute;
+  	left:0;
+		-moz-transition: all 0.3s ease-in-out;
 	  -o-transition: all 0.3s ease-in-out;
 	  -webkit-transition: all 0.3s ease-in-out;
 	  -ms-transition: all 0.3s ease-in-out;
 	  transition: all 0.3s ease-in-out;
 	}
 
-	#page-title .header-logo a .main2 {
-	  display: none;
+	#page-title .header-logo a .main2:hover {
 	  opacity: 0;
-	}
-
-	#page-title .header-logo a:hover .main2 {
-	  display: inherit;
-	  opacity: 1;
-	  -moz-transition: all 0.3s ease-in-out;
-	  -o-transition: all 0.3s ease-in-out;
-	  -webkit-transition: all 0.3s ease-in-out;
-	  -ms-transition: all 0.3s ease-in-out;
-	  transition: all 0.3s ease-in-out;
-	  pointer-events: none;
 	}
 
   /* -------------------------------------------------------------------
@@ -1030,30 +1018,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
   #menu-nav-wrap .header-social-list li:last-child {
 	margin: 0;
   }
-	#menu-nav-wrap .header-social-list li a:hover .main1 {
-	  display: none;
-	  opacity: 0;
+	#menu-nav-wrap .header-social-list a img {
+	  position: absolute;
 	  -moz-transition: all 0.3s ease-in-out;
 	  -o-transition: all 0.3s ease-in-out;
 	  -webkit-transition: all 0.3s ease-in-out;
 	  -ms-transition: all 0.3s ease-in-out;
 	  transition: all 0.3s ease-in-out;
 	}
-
-	#menu-nav-wrap .header-social-list li a .main2 {
-	  display: none;
+	#menu-nav-wrap .header-social-list a .main2:hover {
 	  opacity: 0;
-	}
-
-	#menu-nav-wrap .header-social-list li a:hover .main2 {
-	  display: inherit;
-	  opacity: 1;
-	  -moz-transition: all 0.3s ease-in-out;
-	  -o-transition: all 0.3s ease-in-out;
-	  -webkit-transition: all 0.3s ease-in-out;
-	  -ms-transition: all 0.3s ease-in-out;
-	  transition: all 0.3s ease-in-out;
-	  pointer-events: none;
 	}
   #menu-nav-wrap .close-button {
 	display: block;
