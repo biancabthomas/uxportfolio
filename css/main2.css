@@ -31,8 +31,6 @@
 /*
 /* a. Webfonts and Iconfonts
 /* =================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("simple-line-icons/simple-line-icons.css");
