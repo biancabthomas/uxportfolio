@@ -33,6 +33,7 @@
    <link rel="stylesheet" href="css/fonts.css">
    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="css/simple-line-icons/simple-line-icons.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
    <!-- Script
    =================================================== -->
@@ -121,7 +122,6 @@
    ================================================== -->
    <section id="content">
 
-	   <div class="row portfolio-content">
 
         <ul class="grid effect-2" id="grid">
             <li><a href="images/pbl_presentation/pbl_presentation.webp" data-fancybox="gallery" data-fancybox data-caption=""><img src="images/pbl_presentation/pbl_presentation.webp"
@@ -462,7 +462,6 @@
               images/printed_report/pbl_printedreport20.webp 1000w"></a></li>
         </ul>
 
-        </div>
 
         <div class="row portfolio-content">
         <div class="svg-wrap">
@@ -504,14 +503,24 @@
       		<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-left-1"></svg></span>
       		<div>
       			<h3>Prototypes</h3>
-      			<img src="images/portfolio/mobile_low-fi_wireframe1.jpg" alt="Previous thumb"/>
+      			<img src="images/portfolio/mobile_low-fi_wireframe1.webp"
+            sizes="(max-width:600px) 100vw, 60vw"
+            srcset="images/portfolio/mobile_low-fi_wireframe1.webp 400w,
+            images/portfolio/mobile_low-fi_wireframe1.webp 600w,
+            images/portfolio/mobile_low-fi_wireframe1.webp 800w,
+            images/portfolio/mobile_low-fi_wireframe1.webp 1000w" alt="Previous thumb"/>
       		</div>
       	</a>
       	<a class="next" href="index.html">
       		<span class="icon-wrap"><svg class="icon" width="32" height="32" viewBox="0 0 64 64"><use xlink:href="#arrow-right-1"></svg></span>
       		<div>
       			<h3>Home</h3>
-      			<img src="uxdesign_mainpage.jpg" alt="Next thumb"/>
+      			<img src="uxdesign_mainpage.webp"
+            sizes="(max-width:600px) 100vw, 60vw"
+            srcset="uxdesign_mainpage.webp 400w,
+            uxdesign_mainpage.webp 600w,
+            uxdesign_mainpage.webp 800w,
+            uxdesign_mainpage.webp 1000w" alt="Next thumb"/>
       		</div>
       	</a>
       </nav>
@@ -566,6 +575,7 @@
 		<script src="js/classie.js"></script>
 		<script src="js/AnimOnScroll.js"></script>
 		<script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+    <script src'//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 		<script>
 			new AnimOnScroll( document.getElementById( 'grid' ), {
 				minDuration : 0.4,
