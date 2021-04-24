@@ -28,35 +28,29 @@
 	max-width: 100%;
 }
 
-.grid3 {
-	max-width: 1123px;
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	clear: both;
-	display: none;
+.mock1 {
+	object-fit: cover;
+	overflow: hidden;
+	width: 900px;
+	height: 486.5px;
 }
 
-.grid3 li {
-	display: block;
-	float: left;
-	padding: 0;
-	width: 33%;
-	opacity: 0;
+.mock2 {
+	object-fit: cover;
+	overflow: hidden;
+	height: 246px;
 }
 
-.grid3 li.shown,
-.no-js .grid3 li,
-.no-cssanimations .grid3 li {
-	opacity: 1;
+.mock3 {
+	object-fit: cover;
+	overflow: hidden;
+	height: 240px;
 }
 
-.grid3 li a,
-.grid3 li img {
-	outline: none;
-	border: none;
-	display: block;
-	max-width: 100%;
+.mock4 {
+	object-fit: cover;
+	overflow: hidden;
+	height: 315.5px;
 }
 
 .grid2 {
@@ -83,37 +77,6 @@
 
 .grid2 li a,
 .grid2 li img {
-	outline: none;
-	border: none;
-	display: block;
-	max-width: 100%;
-}
-
-.grid4 {
-	max-width: 1123px;
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	clear: both;
-	display: none;
-}
-
-.grid4 li {
-	display: block;
-	float: left;
-	padding: 0;
-	width: 33%;
-	opacity: 0;
-}
-
-.grid4 li.shown,
-.no-js .grid4 li,
-.no-cssanimations .grid4 li {
-	opacity: 1;
-}
-
-.grid4 li a,
-.grid4 li img {
 	outline: none;
 	border: none;
 	display: block;
@@ -154,41 +117,7 @@
 	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
 }
 
-.grid3.effect-2 li.animate {
-	-webkit-transform: translateY(200px);
-	transform: translateY(200px);
-	-webkit-animation: moveUp 0.65s ease forwards;
-	animation: moveUp 0.65s ease forwards;
-}
-
-@-webkit-keyframes moveUp {
-	0% { }
-	100% { -webkit-transform: translateY(0); opacity: 1; }
-}
-
-@keyframes moveUp {
-	0% { }
-	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
-}
-
 .grid2.effect-2 li.animate {
-	-webkit-transform: translateY(200px);
-	transform: translateY(200px);
-	-webkit-animation: moveUp 0.65s ease forwards;
-	animation: moveUp 0.65s ease forwards;
-}
-
-@-webkit-keyframes moveUp {
-	0% { }
-	100% { -webkit-transform: translateY(0); opacity: 1; }
-}
-
-@keyframes moveUp {
-	0% { }
-	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
-}
-
-.grid4.effect-2 li.animate {
 	-webkit-transform: translateY(200px);
 	transform: translateY(200px);
 	-webkit-animation: moveUp 0.65s ease forwards;
@@ -354,37 +283,55 @@
 	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 }
 
-@media screen and (max-width: 900px) {
-	.grid1 {
-		display: none;
+@media screen and (max-width: 1025px) {
+	.mock1 {
+		height: 451px;
 	}
 
+	.mock4 {
+		height: 271px;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	.grid1 li {
 		width: 50%;
-	}
-
-	.grid3 {
-		display: block;
-	}
-
-	.grid3 li {
-		width: 50%;
-	}
-
-	.grid2 {
-		display: none;
 	}
 
 	.grid2 li {
 		width: 50%;
 	}
 
-	.grid4 {
-		display: block;
+	.mock1 {
+		height: 515px;
 	}
 
-	.grid4 li {
-		width: 50%;
+	.mock2 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock3 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock4 {
+		height: 218px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.mock1 {
+		height: 472px;
+	}
+
+	.mock4 {
+		height: 199px;
 	}
 }
 
@@ -393,15 +340,35 @@
 		width: 100%;
 	}
 
-	.grid3 li {
-		width: 100%;
-	}
-
 	.grid2 li {
 		width: 100%;
 	}
 
-	.grid4 li {
-		width: 100%;
+	.mock1 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock2 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock3 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock4 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
 	}
 }
