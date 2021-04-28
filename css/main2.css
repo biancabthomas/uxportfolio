@@ -832,19 +832,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	-ms-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
   }
-
-	#page-title .header-logo a img {
-		position: absolute;
-  	left:0;
-		-moz-transition: all 0.3s ease-in-out;
+	#page-title .header-logo a svg circle {
+	  -moz-transition: all 0.3s ease-in-out;
 	  -o-transition: all 0.3s ease-in-out;
 	  -webkit-transition: all 0.3s ease-in-out;
 	  -ms-transition: all 0.3s ease-in-out;
 	  transition: all 0.3s ease-in-out;
 	}
 
-	#page-title .header-logo a .main2:hover {
-	  opacity: 0;
+	#page-title .header-logo a svg:hover circle {
+	  fill: #336F70;
+	  -moz-transition: all 0.3s ease-in-out;
+	  -o-transition: all 0.3s ease-in-out;
+	  -webkit-transition: all 0.3s ease-in-out;
+	  -ms-transition: all 0.3s ease-in-out;
+	  transition: all 0.3s ease-in-out;
 	}
 
   /* -------------------------------------------------------------------
