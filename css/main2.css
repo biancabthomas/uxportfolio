@@ -1647,7 +1647,7 @@ hr {
 }
 #page-title h1 {
 	font-family: "Ubuntu", sans-serif !important;
-	font-size: 60px !important;
+	font-size: 3.75rem;
 	color: #E3AFBD;
 	font-weight: 700 !important;
 	letter-spacing: -1px;
@@ -1659,7 +1659,7 @@ hr {
 #page-title h3 {
 	color: #79a79a;
 	font-family: "Rubik", sans-serif;
-	font-size: 18px;
+	font-size: 1.125rem;
 	margin: 0;
 }
 
@@ -1667,20 +1667,10 @@ hr {
 	#page-title {
 		background: url(../images/abstract-background.webp) no-repeat scroll;
 	}
-	#page-title h1 {
-		font-size: 50px !important;
-	}
-	#page-title h3 {
-		font-size: 15px;
-	}
 }
 
 @media only screen and (max-width: 500px) {
-	#page-title h1 {
-		font-size: 30px !important;
-	}
 	#page-title h3 {
-		font-size: 9px;
 		margin-top: -20px;
 	}
 }
@@ -2495,7 +2485,7 @@ h1 {
 	float: right;
 }
 .img {
-	width: 1123px;
+	width: 77em;
 }
 
 /* more projects

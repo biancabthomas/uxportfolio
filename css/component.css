@@ -30,26 +30,26 @@
 
 .mock1 {
 	object-fit: cover;
-	overflow: hidden;
-	width: 900px;
+	overflow: auto;
+	display: block;
 	height: 486.5px;
 }
 
 .mock2 {
 	object-fit: cover;
-	overflow: hidden;
+	overflow: auto;
 	height: 246px;
 }
 
 .mock3 {
 	object-fit: cover;
-	overflow: hidden;
+	overflow: auto;
 	height: 240px;
 }
 
 .mock4 {
 	object-fit: cover;
-	overflow: hidden;
+	overflow: auto;
 	height: 315.5px;
 }
 
@@ -283,17 +283,28 @@
 	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 64.063em) {
 	.mock1 {
-		height: 451px;
+		height: 30.1em;
+	}
+
+	.mock3 {
+		overflow: visible;
+		height: 16em;
 	}
 
 	.mock4 {
-		height: 271px;
+		height: 18.05em;
+	}
+
+	.mock5 {
+		object-fit: cover;
+		overflow: hidden;
+		height: 13.7em;
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 56.25em) {
 	.grid1 li {
 		width: 50%;
 	}
@@ -322,6 +333,13 @@
 
 	.mock4 {
 		height: 217.5px;
+	}
+
+	.mock5 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
 	}
 }
 
@@ -455,7 +473,7 @@
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25em) {
 	.grid1 li {
 		width: 100%;
 	}
