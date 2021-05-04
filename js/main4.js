@@ -13,14 +13,14 @@
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+        })
     })
-            
-  
-    
+
+
+
     /*==================================================================
     [ Validate ]*/
-    var name = $('.validate-input input[name="full name"]');
+    var name = $('.validate-input input[name="name"]');
     var email = $('.validate-input input[name="email"]');
     var message = $('.validate-input textarea[name="message"]');
 
@@ -65,7 +65,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
+
+
 
 })(jQuery);
