@@ -522,42 +522,29 @@
 
 
             <!-- form -->
-            <form name="contactForm" id="contactForm" action="https://formspree.io/f/meqppzng" method="post">
+            <form class="validate-form" name="contactForm" id="contactForm" action="https://formspree.io/f/meqppzng" method="post">
 
-               <div class="form-field">
+               <div class="form-field validate-input">
  					   <input class="input2" name="name" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                </div>
 
-                 		<div class="form-field">
+                 		<div class="form-field validate-input">
                  			<input class="input2" name="email" type="text" id="contactEmail" placeholder="Email" value="" required="">
                  		</div>
 
-               <div class="form-field">
+               <div class="form-field validate-input">
 	              	<textarea class="input2" name="message" id="contactMessage" placeholder="Message" rows="10" cols="50" required=""></textarea>
 	            </div>
 
                <div class="form-field">
                   <button class="submitform" type="submit">Submit</button>
 
-                  <div id="submit-loader">
-                     <div class="text-loader">Sending...</div>
-       			      <div class="s-loader">
-							  	<div class="bounce1"></div>
-							  	<div class="bounce2"></div>
-							  	<div class="bounce3"></div>
-							</div>
-						</div>
                </div>
 
       		</form> <!-- end form -->
 
             <!-- contact-warning -->
-            <div id="message-warning"></div>
 
-            <!-- contact-success -->
-      		<div id="message-success">
-               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-      		</div>
 
 
    	</div> <!-- end row contact-content -->
