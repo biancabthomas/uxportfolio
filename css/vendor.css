@@ -1,19 +1,19 @@
-/* =================================================================== 
+/* ===================================================================
  *
- *  Infinity v1.0 Vendor/Third Party CSS 
+ *  Infinity v1.0 Vendor/Third Party CSS
  *  01-02-2017
  *  ------------------------------------------------------------------
  *
  *  TOC:
  *  01. Animate.css
- *  02. Lightgallery 
- *  03. Owl Carousel 
+ *  02. Lightgallery
+ *  03. Owl Carousel
  *  04. Flexslider
  *
  * =================================================================== */
 
 /**
- * 01. 
+ * 01.
  * Animate.css - http://daneden.me/animate
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
@@ -2843,10 +2843,7 @@
  * light gallery default styles
  * ---------------------------------------- */
 
-@font-face {
-  font-family: 'lg';
-  src: url("../fonts/lightgallery/lg.eot?n1z373");
-  src: url("../fonts/lightgallery/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lightgallery/lg.woff?n1z373") format("woff"), url("../fonts/lightgallery/lg.ttf?n1z373") format("truetype"), url("../fonts/lightgallery/lg.svg?n1z373#lg") format("svg");
+@font-face {  
   font-weight: normal;
   font-style: normal;
 }
@@ -3278,15 +3275,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-vimeo .lg-video-play {
-  background: url("../images/lightgallery/vimeo-play.png") no-repeat scroll 0 0 transparent;
 }
 
 .lg-outer .lg-has-vimeo:hover .lg-video-play {
-  background: url("../images/lightgallery/vimeo-play.png") no-repeat scroll 0 -58px transparent;
 }
 
 .lg-outer .lg-has-html5 .lg-video-play {
-  background: transparent url("../images/lightgallery/video-play.png") no-repeat scroll 0 0;
   height: 64px;
   margin-left: -32px;
   margin-top: -32px;
@@ -3299,11 +3293,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-has-youtube .lg-video-play {
-  background: url("../images/lightgallery/youtube-play.png") no-repeat scroll 0 0 transparent;
 }
 
 .lg-outer .lg-has-youtube:hover .lg-video-play {
-  background: url("../images/lightgallery/youtube-play.png") no-repeat scroll 0 -60px transparent;
 }
 
 .lg-outer .lg-video-object {
@@ -3607,7 +3599,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-item {
-  background: url("../images/lightgallery/loading.gif") no-repeat scroll center center transparent;
   display: none !important;
 }
 
@@ -3975,7 +3966,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 50%;
   margin-left: -40px;
   margin-top: -40px;
-  background: url("owl.video.play.png") no-repeat;
   cursor: pointer;
   z-index: 1;
   -webkit-backface-visibility: hidden;
@@ -4020,7 +4010,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
- * 
+ *
  * ===================================================================
  */
 /* reset */

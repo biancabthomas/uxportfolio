@@ -1790,7 +1790,6 @@ h1 {
 /* k. Hero Section
 /* =================================================================== */
 #hero {
-	background: #12151b url(../images/hero-bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
@@ -2190,7 +2189,6 @@ h1 {
 /*  o. Journal Section
 /* =================================================================== */
 #journal {
-	background: #a43b0a url(../images/blog-bg.jpg) no-repeat bottom center fixed;
 	-webkit-background-size: cover !important;
 	-moz-background-size: cover !important;
 	background-size: cover !important;
