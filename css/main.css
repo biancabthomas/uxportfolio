@@ -2052,6 +2052,11 @@ button:hover {
     width: 80%;
   }
 }
+@media only screen and (max-width: 281px) {
+  button {
+    width: 90%;
+  }
+}
 
 
 /* ===================================================================
@@ -2671,6 +2676,73 @@ button:hover {
   }
 }
 
+@media only screen and (max-width: 281px) {
+
+  .column2 {
+    height: 370px;
+  }
+
+  .column7 {
+    height: 310px;
+  }
+
+  .column8 {
+    height: 400px;
+  }
+
+  .column9 {
+    height: 320px;
+  }
+
+  .column10 {
+    height: 370px;
+  }
+
+  .column11 {
+    height: 370px;
+  }
+
+  .column12 {
+    height: 290px;
+  }
+
+  .column13 {
+    height: 340px;
+  }
+
+  .column3 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: 220px;
+    padding: 5px;
+  }
+
+  .column4 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: 170px;
+    padding: 5px;
+  }
+
+  .column5 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: 180px;
+    padding: 5px;
+  }
+
+  .column6 {
+    float: none;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    padding: 5px;
+  }
+}
+
 
 /* ===================================================================
  *  13. portfolio - (_layout.scss)
@@ -2714,6 +2786,11 @@ button:hover {
 }
 #portfolio .bricks-wrapper .brick:nth-child(2n+1) {
   clear: both;
+}
+.mock {
+	object-fit: cover;
+	overflow: hidden;
+	height: 48.156em;
 }
 
 /* -------------------------------------------------------------------
@@ -2880,15 +2957,63 @@ button:hover {
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .mock {
+    height: 42.09em;
+  }
+}
+@media only screen and (max-width: 823px) {
+  .mock {
+    height: 33.48em;
+  }
+}
+@media only screen and (max-width: 812px) {
+  .mock {
+    height: 33.05em;
+  }
+}
 @media only screen and (max-width: 768px) {
   #portfolio .intro-wrap {
     padding: 12rem 0 21rem;
+  }
+  .mock {
+    height: 28.89em;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .mock {
+    height: 27.5em;
+  }
+}
+@media only screen and (max-width: 732px) {
+  .mock {
+    height: 27.25em;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .mock {
+    height: 26.8em;
+  }
+}
+@media only screen and (max-width: 668px) {
+  .mock {
+    height: 24.55em;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mock {
+    height: 23.4em;
   }
 }
 @media only screen and (max-width: 600px) {
   #portfolio .bricks-wrapper .brick {
     float: none;
     width: 100%;
+  }
+  .mock {
+    object-fit: fill;
+		overflow: visible;
+		height: auto;
   }
 
   .bricks-wrapper .item-wrap .item-text .folio-title {
