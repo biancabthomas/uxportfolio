@@ -1731,7 +1731,7 @@ hr {
 	color: #E3AFBD;
 	font-weight: 700 !important;
 	letter-spacing: -1px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 #page-title h1 span {
 	color: #f26522;
@@ -1739,7 +1739,7 @@ hr {
 #page-title h3 {
 	color: #79a79a;
 	font-family: "Rubik", sans-serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin: 0;
 }
 
