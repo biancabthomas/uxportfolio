@@ -81,7 +81,7 @@
 					<a href="https://www.instagram.com/biancabthomasportfolio/" target="blank"><i class="fa fa-instagram"></i></a>
 				</li>
 			   <li>
-				   <a href="http://biancabthomas.github.io/portfolio" target="blank"><img class="main1" width="30px" style="vertical-align: middle; margin-top: -20px;" src="images/bbt_logo5.svg" /><img class="main2" width="30px" style="vertical-align: middle; margin-top: -20px;" src="images/bbt_logo4.svg" /></a>
+				   <a href="http://biancabthomas.github.io/portfolio" target="blank"><img class="main1 lazy" width="30px" style="vertical-align: middle; margin-top: -20px;" src="images/bbt_logo5.svg" /><img class="main2 lazy" width="30px" style="vertical-align: middle; margin-top: -20px;" src="images/bbt_logo4.svg" /></a>
 			   </li>
 			 </ul>
 
@@ -452,7 +452,7 @@
    				<div class="brick folio-item">
 	               <div class="item-wrap animate-this">
 	                  <a href="website_redesign.html" class="overlay">
-	                  	<img src="images/portfolio/desktop_highfi_mockup3.webp">
+	                  	<img class="lazy" src="images/portfolio/desktop_highfi_mockup3.webp">
 	                     <div id="item-text" class="item-text">
 	                     	<span class="folio-types">
 		     					      Website Redesign
@@ -466,7 +466,7 @@
 	        		<div class="brick folio-item">
 	               <div class="item-wrap animate-this" >
 	                  <a href="ux_design.html" class="overlay">
-	                  	<img class="mock" src="images/portfolio/pbl_cover.webp">
+	                  	<img class="mock lazy" src="images/portfolio/pbl_cover.webp">
 	                     <div class="item-text">
 	                     	<span class="folio-types">
 		     					      UX Design
@@ -480,7 +480,7 @@
 	        		<div class="brick folio-item">
 	               <div class="item-wrap animate-this">
 	                  <a href="prototypes.html" class="overlay">
-	                  	<img src="images/portfolio/mobile_low-fi_wireframe1.webp">
+	                  	<img class="lazy" src="images/portfolio/mobile_low-fi_wireframe1.webp">
 	                     <div class="item-text">
 		     					   <span class="folio-types">
 		     					      Prototypes
@@ -602,6 +602,49 @@ document.getElementById("year").innerHTML = date;
    <script src="js/main.js"></script>
    <script src="js/main4.js"></script>
    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+   <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.js"></script>
+   <script>
+     function logElementEvent(eventName, element) {
+       console.log(Date.now(), eventName, element.getAttribute("data-src"));
+     }
+
+     var callback_enter = function (element) {
+       logElementEvent("🔑 ENTERED", element);
+     };
+     var callback_exit = function (element) {
+       logElementEvent("🚪 EXITED", element);
+     };
+     var callback_loading = function (element) {
+       logElementEvent("⌚ LOADING", element);
+     };
+     var callback_loaded = function (element) {
+       logElementEvent("👍 LOADED", element);
+     };
+     var callback_error = function (element) {
+       logElementEvent("💀 ERROR", element);
+       element.src =
+         "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+     };
+     var callback_finish = function () {
+       logElementEvent("✔️ FINISHED", document.documentElement);
+     };
+     var callback_cancel = function (element) {
+       logElementEvent("🔥 CANCEL", element);
+     };
+
+     require(["js/lazyload.amd.min.js"], function (LazyLoad) {
+       window.ll = new LazyLoad({
+         // Assign the callbacks defined above
+         callback_enter: callback_enter,
+         callback_exit: callback_exit,
+         callback_cancel: callback_cancel,
+         callback_loading: callback_loading,
+         callback_loaded: callback_loaded,
+         callback_error: callback_error,
+         callback_finish: callback_finish
+       });
+     });
+   </script>
 
 </body>
 
