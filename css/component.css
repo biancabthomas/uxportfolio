@@ -282,6 +282,17 @@
 	70% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
 	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 }
+@media screen and (max-width: 1367px) {
+	.mock1 {
+		height: 486px;
+	}
+
+	.mock5 {
+		object-fit: cover;
+		overflow: hidden;
+		height: 240px;
+	}
+}
 
 @media screen and (max-width: 64.063em) {
 	.mock1 {
@@ -298,8 +309,6 @@
 	}
 
 	.mock5 {
-		object-fit: cover;
-		overflow: hidden;
 		height: 13.7em;
 	}
 }
