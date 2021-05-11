@@ -1411,11 +1411,9 @@ header .header-logo a svg:hover circle {
 }
 #menu-nav-wrap .nav-list li {
   padding-left: 0;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.03);
   line-height: 4.2rem;
 }
 #menu-nav-wrap .nav-list li:first-child {
-  border-top: 1px dotted rgba(255, 255, 255, 0.03);
 }
 #menu-nav-wrap .nav-list li a {
   color: #E3AFBD;
