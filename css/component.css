@@ -31,26 +31,37 @@
 .mock1 {
 	object-fit: cover;
 	overflow: auto;
-	display: block;
 	height: 486.5px;
 }
 
 .mock2 {
 	object-fit: cover;
 	overflow: auto;
-	height: 246px;
+	height: 255px;
 }
 
 .mock3 {
 	object-fit: cover;
 	overflow: auto;
-	height: 240px;
+	height: 241px;
 }
 
 .mock4 {
 	object-fit: cover;
 	overflow: auto;
-	height: 315.5px;
+	height: 348px;
+}
+
+.mock5 {
+	object-fit: cover;
+	overflow: hidden;
+	height: 232px;
+}
+
+.mock6 {
+	object-fit: cover;
+	overflow: auto;
+	height: 293px;
 }
 
 .grid2 {
@@ -287,9 +298,11 @@
 		height: 486px;
 	}
 
+	.mock3 {
+		height: 240px;
+	}
+
 	.mock5 {
-		object-fit: cover;
-		overflow: hidden;
 		height: 240px;
 	}
 }
@@ -300,16 +313,19 @@
 	}
 
 	.mock3 {
-		overflow: visible;
-		height: 16em;
+		height: 16.05em;
 	}
 
 	.mock4 {
-		height: 18.05em;
+		height: 19.89em;
 	}
 
 	.mock5 {
-		height: 13.7em;
+		height: 13.1em;
+	}
+
+	.mock6 {
+		height: 16.79em;
 	}
 }
 
@@ -341,14 +357,15 @@
 	}
 
 	.mock4 {
-		height: 217.5px;
+		height: 240px;
 	}
 
 	.mock5 {
-		object-fit: contain;
-		overflow: visible;
-		width: auto;
-		height: auto;
+		height: 225px;
+	}
+
+	.mock6 {
+		height: 202px;
 	}
 }
 
@@ -358,7 +375,15 @@
 	}
 
 	.mock4 {
-		height: 215px;
+		height: 231px;
+	}
+
+	.mock5 {
+		height: 222px;
+	}
+
+	.mock6 {
+		height: 195.5px;
 	}
 }
 
@@ -368,7 +393,15 @@
 	}
 
 	.mock4 {
-		height: 199px;
+		height: 218px;
+	}
+
+	.mock5 {
+		height: 207px;
+	}
+
+	.mock6 {
+		height: 185px;
 	}
 }
 
@@ -378,7 +411,15 @@
 	}
 
 	.mock4 {
-		height: 190px;
+		height: 209px;
+	}
+
+	.mock5 {
+		height: 197px;
+	}
+
+	.mock6 {
+		height: 176.5px;
 	}
 }
 
@@ -388,7 +429,15 @@
 	}
 
 	.mock4 {
-		height: 189px;
+		height: 207.5px;
+	}
+
+	.mock5 {
+		height: 195px;
+	}
+
+	.mock6 {
+		height: 175px;
 	}
 }
 
@@ -398,7 +447,15 @@
 	}
 
 	.mock4 {
-		height: 185.5px;
+		height: 204px;
+	}
+
+	.mock5 {
+		height: 192px;
+	}
+
+	.mock6 {
+		height: 172px;
 	}
 }
 
@@ -408,7 +465,15 @@
 	}
 
 	.mock4 {
-		height: 171px;
+		height: 188px;
+	}
+
+	.mock5 {
+		height: 177px;
+	}
+
+	.mock6 {
+		height: 158px;
 	}
 }
 
@@ -418,7 +483,15 @@
 	}
 
 	.mock4 {
-		height: 167px;
+		height: 183.5px;
+	}
+
+	.mock5 {
+		height: 173px;
+	}
+
+	.mock6 {
+		height: 155px;
 	}
 }
 
@@ -428,7 +501,15 @@
 	}
 
 	.mock4 {
-		height: 163px;
+		height: 180px;
+	}
+
+	.mock5 {
+		height: 168px;
+	}
+
+	.mock6 {
+		height: 151px;
 	}
 }
 
@@ -438,7 +519,15 @@
 	}
 
 	.mock4 {
-		height: 146px;
+		height: 161px;
+	}
+
+	.mock5 {
+		height: 149px;
+	}
+
+	.mock6 {
+		height: 135px;
 	}
 }
 
@@ -448,7 +537,15 @@
 	}
 
 	.mock4 {
-		height: 138px;
+		height: 151.5px;
+	}
+
+	.mock5 {
+		height: 143px;
+	}
+
+	.mock6 {
+		height: 128px;
 	}
 }
 
@@ -458,7 +555,15 @@
 	}
 
 	.mock4 {
-		height: 120.5px;
+		height: 133px;
+	}
+
+	.mock5 {
+		height: 124px;
+	}
+
+	.mock6 {
+		height: 112px;
 	}
 }
 
@@ -468,7 +573,15 @@
 	}
 
 	.mock4 {
-		height: 102.5px;
+		height: 112.5px;
+	}
+
+	.mock5 {
+		height: 105.5px;
+	}
+
+	.mock6 {
+		height: 94.5px;
 	}
 }
 
@@ -478,7 +591,15 @@
 	}
 
 	.mock4 {
-		height: 102px;
+		height: 112px;
+	}
+
+	.mock5 {
+		height: 105px;
+	}
+
+	.mock6 {
+		height: 94px;
 	}
 }
 
@@ -513,6 +634,20 @@
 	}
 
 	.mock4 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock5 {
+		object-fit: contain;
+		overflow: visible;
+		width: auto;
+		height: auto;
+	}
+
+	.mock6 {
 		object-fit: contain;
 		overflow: visible;
 		width: auto;
