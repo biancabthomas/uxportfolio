@@ -1585,10 +1585,10 @@ footer {
 	text-align: center;
 }
 footer a, footer a:visited {
-	color: #a43b0a;
+  color: #EDA953;
 }
 footer a:hover, footer a:focus {
-	color: white;
+  color: #336F70;
 }
 footer h3 {
 	font: 13px/24px "raleway-bold", sans-serif;
@@ -1739,6 +1739,11 @@ hr {
 	font-family: "Rubik", sans-serif;
 	font-size: 2rem;
 	margin: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 @media only screen and (max-width: 600px) {

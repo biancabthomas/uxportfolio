@@ -3577,10 +3577,10 @@ footer {
   background-color: #1c2841;
 }
 footer a, footer a:visited {
-  color: #FFFFFF;
+  color: #EDA953;
 }
 footer a:hover, footer a:focus {
-  color: #f9a828;
+  color: #336F70;
 }
 footer .row {
   max-width: 1024px;
