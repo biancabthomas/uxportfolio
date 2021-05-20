@@ -486,7 +486,7 @@ td:last-child {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #0F1215;
+  background: #1b3333;
   z-index: 800;
   height: 100%;
   width: 100%;
@@ -721,7 +721,7 @@ input[type="button"] {
   padding: 0 3rem;
   margin: 0 .3rem 1.2rem 0;
   background: #A5A5A5;
-  color: #222222;
+  color: #EDA953;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
@@ -746,7 +746,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   background: #989898;
-  color: #000000;
+  color: #EDA953;
   outline: 0;
 }
 
@@ -1896,7 +1896,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 .c2 {
   float: left;
-  width: 50%;
+  width: 47%;
   padding: 0;
 }
 
