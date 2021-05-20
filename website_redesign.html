@@ -21,9 +21,11 @@
     ================================================== -->
    <link rel="stylesheet" href="css/vendor.css">
 	<link rel="stylesheet" href="css/base2.css">
+  <link href="css/ionicons.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main2.css">
+  <link rel="stylesheet" href="css/style8.css">
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
    <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" type="text/css" href="css/component.css" />
    <link rel="stylesheet" type="text/css" href="css/demo.css" />
    <link rel="stylesheet" type="text/css" href="css/component4.css" />
    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css'>
@@ -123,30 +125,40 @@
 
 	   <div class="row portfolio-content">
 
-	   <ul class="grid1 effect-2" id="grid">
-			<li><a href="#vid1" data-fancybox="gallery1" data-fancybox data-caption=""><img width="1280" height="875" class="mock2 lazy" src="images/portfolio/desktop_lowfi_mockup1.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/desktop_lowfi_mockup1.webp 400w, images/portfolio/tablet/600px/desktop_lowfi_mockup1.webp 600w, images/portfolio/tablet/800px/desktop_lowfi_mockup1.webp 800w, images/portfolio/desktop_lowfi_mockup1.webp 1000w"></a></li>
-			<video autoplay loop id="vid1" muted plays-inline style="display: none;">
-                <source src="videos/desktop_low-fi_mockup.mp4" type="video/mp4">
-              </video>
-			<li><a href="#vid2" data-fancybox="gallery1" data-fancybox data-caption=""><img width="1280" height="853" class="lazy" src="images/portfolio/desktop_highfi_mockup1.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/desktop_highfi_mockup1.webp 400w, images/portfolio/tablet/600px/desktop_highfi_mockup1.webp 600w, images/portfolio/tablet/800px/desktop_highfi_mockup1.webp 800w, images/portfolio/desktop_highfi_mockup1.webp 1000w"></a></li>
-			<video autoplay loop id="vid2" muted plays-inline style="display: none;">
-                <source src="videos/desktop_hi-fi_mockup1.mp4" type="video/mp4">
-              </video>
-			<li><a href="#vid3" data-fancybox="gallery1" data-fancybox data-caption=""><img width="1280" height="1024" class="mock1 lazy" src="images/portfolio/desktop_highfi_mockup2.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/desktop_highfi_mockup2.webp 400w, images/portfolio/tablet/600px/desktop_highfi_mockup2.webp 600w, images/portfolio/tablet/800px/desktop_highfi_mockup2.webp 800w, images/portfolio/desktop_highfi_mockup2.webp 1000w"></a></li>
-			<video autoplay loop id="vid3" muted plays-inline style="display: none;">
-                <source src="videos/desktop_hi-fi_mockup2.mp4" type="video/mp4">
-              </video>
-			<li><a href="#vid4" data-fancybox="gallery1" data-fancybox data-caption=""><img width="1280" height="850" class="mock3 lazy" src="images/portfolio/desktop_highfi_mockup3.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/desktop_highfi_mockup3.webp 400w, images/portfolio/tablet/600px/desktop_highfi_mockup3.webp 600w, images/portfolio/tablet/800px/desktop_highfi_mockup3.webp 800w, images/portfolio/desktop_highfi_mockup3.webp 1000w"></a></li>
-			<video autoplay loop id="vid4" muted plays-inline style="display: none;">
-                <source src="videos/desktop_hi-fi_mockup3.mp4" type="video/mp4">
-              </video>
-			<li><a href="#vid5" data-fancybox="gallery1" data-fancybox data-caption=""><img width="1280" height="831" class="mock5 lazy" src="images/portfolio/desktop_highfi_mockup4.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/desktop_highfi_mockup4.webp 400w, images/portfolio/tablet/600px/desktop_highfi_mockup4.webp 600w, images/portfolio/tablet/800px/desktop_highfi_mockup4.webp 800w, images/portfolio/desktop_highfi_mockup4.webp 1000w"></a></li>
-			<video autoplay loop id="vid5" muted plays-inline style="display: none;">
-                <source src="videos/desktop_hi-fi_mockup4.mp4" type="video/mp4">
-              </video>
-		</ul>
+       <div class="grid-wrapper animate-this">
+       	<div class="wide">
+       		<a href="#vid1" class="link" data-fancybox="gallery1" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/desktop_lowfi_mockup1.webp" alt="" /></a>
+       	</div>
+        <video autoplay loop id="vid1" muted plays-inline style="display: none;">
+                  <source src="videos/desktop_low-fi_mockup.mp4" type="video/mp4">
+                </video>
+       	<div class="wide">
+       		<a href="#vid2" class="link" data-fancybox="gallery1" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/desktop_highfi_mockup1.webp" alt="" /></a>
+       	</div>
+        <video autoplay loop id="vid2" muted plays-inline style="display: none;">
+                  <source src="videos/desktop_hi-fi_mockup1.mp4" type="video/mp4">
+                </video>
+       	<div>
+       		<a href="#vid3" class="link" data-fancybox="gallery1" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/desktop_highfi_mockup2.webp" alt=""></a>
+       	</div>
+        <video autoplay loop id="vid3" muted plays-inline style="display: none;">
+                  <source src="videos/desktop_hi-fi_mockup2.mp4" type="video/mp4">
+                </video>
+       	<div class="wide">
+       		<a href="#vid4" class="link" data-fancybox="gallery1" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/desktop_highfi_mockup3.webp" alt="" /></a>
+       	</div>
+        <video autoplay loop id="vid4" muted plays-inline style="display: none;">
+                  <source src="videos/desktop_hi-fi_mockup3.mp4" type="video/mp4">
+                </video>
+       	<div>
+       		<a href="#vid5" class="link" data-fancybox="gallery1" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/desktop_highfi_mockup4.webp" alt="" /></a>
+       	</div>
+        <video autoplay loop id="vid5" muted plays-inline style="display: none;">
+                  <source src="videos/desktop_hi-fi_mockup4.mp4" type="video/mp4">
+                </video>
 
 	   </div>
+   </div>
 
 		<div class="row portfolio-content" style="margin-top: -10px;">
 
@@ -168,24 +180,32 @@
 
 		<div class="row portfolio-content" style="margin-top: -5px;">
 
-				<ul class="grid2 effect-2" id="grid">
-					<li><a href="#vid6" data-fancybox="gallery2" data-fancybox data-caption=""><img width="1280" height="720" class="mock6 lazy" src="images/portfolio/mobile_lowfi_mockup.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/mobile_lowfi_mockup.webp 400w, images/portfolio/tablet/600px/mobile_lowfi_mockup.webp 600w, images/portfolio/tablet/800px/mobile_lowfi_mockup.webp 800w, images/portfolio/mobile_lowfi_mockup.webp 1000w"></a></li>
-					<video autoplay loop id="vid6" muted plays-inline style="display: none;">
-						<source src="videos/mobile_low-fi_mockup.mp4" type="video/mp4">
-					  </video>
-					<li><a href="#vid7" data-fancybox="gallery2" data-fancybox data-caption=""><img width="1280" height="720" class="lazy" src="images/portfolio/mobile_hifi_mockup3.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/mobile_hifi_mockup3.webp 400w, images/portfolio/tablet/600px/mobile_hifi_mockup3.webp 600w, images/portfolio/tablet/800px/mobile_hifi_mockup3.webp 800w, images/portfolio/mobile_hifi_mockup3.webp 1000w"></a></li>
-					<video autoplay loop id="vid7" muted plays-inline style="display: none;">
-						<source src="videos/mobile_hi-fi_mockup3.mp4" type="video/mp4">
-					  </video>
-					<li><a href="#vid8" data-fancybox="gallery2" data-fancybox data-caption=""><img width="1280" height="720" class="lazy" src="images/portfolio/mobile_hifi_mockup1.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/mobile_hifi_mockup1.webp 400w, images/portfolio/tablet/600px/mobile_hifi_mockup1.webp 600w, images/portfolio/tablet/800px/mobile_hifi_mockup1.webp 800w, images/portfolio/mobile_hifi_mockup1.webp 1000w"></a></li>
-					<video autoplay loop id="vid8" muted plays-inline style="display: none;">
-						<source src="videos/mobile_hi-fi_mockup1.mp4" type="video/mp4">
-					  </video>
-					<li><a href="#vid9" data-fancybox="gallery2" data-fancybox data-caption=""><img width="1280" height="960" class="mock4 lazy" src="images/portfolio/mobile_hifi_mockup2.webp" sizes="(max-width:600px) 100vw, 60vw" srcset="images/portfolio/mobile/414px/mobile_hifi_mockup2.webp 400w, images/portfolio/tablet/600px/mobile_hifi_mockup2.webp 600w, images/portfolio/tablet/800px/mobile_hifi_mockup2.webp 800w, images/portfolio/mobile_hifi_mockup2.webp 1000w"></a></li>
-					<video autoplay loop id="vid9" muted plays-inline style="display: none;">
-						<source src="videos/mobile_hi-fi_mockup2.mp4" type="video/mp4">
-					  </video>
-				</ul>
+      <div class="grid-wrapper animate-this">
+       <div>
+         <a href="#vid6" class="link" data-fancybox="gallery2" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/mobile_lowfi_mockup.webp" alt="" /></a>
+       </div>
+       <video autoplay loop id="vid6" muted plays-inline style="display: none;">
+                 <source src="videos/mobile_low-fi_mockup.mp4" type="video/mp4">
+               </video>
+       <div>
+         <a href="#vid7" class="link" data-fancybox="gallery2" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/mobile_hifi_mockup3.webp" alt="" /></a>
+       </div>
+       <video autoplay loop id="vid7" muted plays-inline style="display: none;">
+                 <source src="videos/mobile_hi-fi_mockup3.mp4" type="video/mp4">
+               </video>
+       <div class="tall">
+         <a href="#vid8" class="link" data-fancybox="gallery2" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/mobile_hifi_mockup1.webp" alt=""></a>
+       </div>
+       <video autoplay loop id="vid8" muted plays-inline style="display: none;">
+                 <source src="videos/mobile_hi-fi_mockup1.mp4" type="video/mp4">
+               </video>
+       <div class="big">
+         <a href="#vid9" class="link" data-fancybox="gallery2" data-fancybox data-caption=""><img class="imgs" src="images/portfolio/mobile_hifi_mockup2.webp" alt="" /></a>
+       </div>
+       <video autoplay loop id="vid9" muted plays-inline style="display: none;">
+                 <source src="videos/mobile_hi-fi_mockup2.mp4" type="video/mp4">
+               </video>
+    </div>
 
 		</div> <!-- /portfolio-content -->
 
@@ -343,7 +363,7 @@
    <footer>
 
 
-		<p>Copyright &copy; <span id="year"></span> Bianca B. Thomas | Designed by <a href="https://www.styleshout.com/free-templates/puremedia/">Styleshout</a></p>
+		<p>Copyright &copy; <span id="year"></span> Bianca B. Thomas | Designed by <a href="https://www.styleshout.com/free-templates/puremedia/" target="_blank">Styleshout</a></p>
 
     <script>
     var date = new Date().getFullYear();
@@ -388,7 +408,6 @@ document.getElementById("year").innerHTML = date;
 			} );
 		</script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-    <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.js"></script>
     <script>
       function logElementEvent(eventName, element) {
