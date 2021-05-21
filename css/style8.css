@@ -1,33 +1,118 @@
 /* Reset CSS */
-
-
+.imgs {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	display: inline-block;
+}
 /* Main CSS */
-.grid-wrapper > div {
+.grid-wrapper1 > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.grid-wrapper > div > .link, .imgs {
+.grid-wrapper1 > div > .link, .imgs {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 0;
 }
 
-.grid-wrapper {
+.grid-wrapper1 {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 0;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
 }
-.grid-wrapper .wide {
+.grid-wrapper1 .wide {
 	grid-column: span 2;
 }
-.grid-wrapper .tall {
-	grid-row: span 3;
+.grid-wrapper1 .tall {
+	grid-row: span 2;
 }
-.grid-wrapper .big {
+.grid-wrapper1 .big {
 	grid-column: span 2;
 	grid-row: span 2;
+}
+
+.grid-wrapper2 > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.grid-wrapper2 > div > .link, .imgs {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.grid-wrapper2 {
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+.grid-wrapper2 .wide {
+	grid-column: span 2;
+}
+.grid-wrapper2 .tall {
+	grid-row: span 3;
+}
+.grid-wrapper2 .big {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+@media only screen and (max-width: 1025px) {
+	.grid-wrapper1 .wide {
+		grid-column: span 1;
+	}
+	.grid-wrapper1 .tall {
+		grid-row: span 2;
+	}
+	.grid-wrapper1 .big {
+		grid-column: span 3;
+		grid-row: span 3;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.grid-wrapper1 .wide {
+		grid-column: span 2;
+	}
+	.grid-wrapper1 .tall {
+		grid-row: span 2;
+	}
+	.grid-wrapper1 .big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+	.grid-wrapper2 .wide {
+		grid-column: span 2;
+	}
+	.grid-wrapper2 .tall {
+		grid-row: span 1;
+	}
+	.grid-wrapper2 .big {
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.grid-wrapper1 > div > .link, .imgs {
+		object-fit: contain;
+	}
+
+	.grid-wrapper1 {
+		display: block;
+	}
+
+	.grid-wrapper2 > div > .link, .imgs {
+		object-fit: contain;
+	}
+
+	.grid-wrapper2 {
+		display: block;
+	}
 }
