@@ -13,7 +13,7 @@ body {
 .grid li {
 	display: block;
 	float: left;
-	padding: 7px;
+	padding: 0;
 	width: 33%;
 	opacity: 0;
 }
