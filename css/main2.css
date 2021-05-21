@@ -1636,9 +1636,19 @@ footer .copyright {
 	color: #336F70;
   }
 
+	@media only screen and (max-width: 768px) {
+		footer {
+			font-size: 13px;
+		}
+	}
+	@media only screen and (max-width: 600px) {
+		footer {
+			font-size: 11px;
+		}
+	}
 	@media only screen and (max-width: 400px) {
 		footer {
-			font-size: 12px;
+			font-size: 8px;
 		}
 	}
 
