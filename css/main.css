@@ -705,6 +705,7 @@ select:-webkit-autofill:focus {
  *  06. buttons - (_button-essentials.scss)
  *
  * ------------------------------------------------------------------- */
+/*About Me Button*/
 .button,
 a.button,
 button,
@@ -746,7 +747,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   background: #989898;
-  color: #EDA953;
+  color: #E3AFBD !important;
   outline: 0;
 }
 
@@ -1636,9 +1637,7 @@ header .header-logo a svg:hover circle {
 .home-social-list li a:active {
   color: #EDA953;
 }
-.home-social-list .img-fixer {
-  width: 37px;
-}
+
 .home-social-list a img {
   position: absolute;
   left:0;
@@ -1761,11 +1760,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 
   #main1 {
-    width: 35px
+    width: 25px
   }
 
   #main2 {
-    width: 35px
+    width: 25px
   }
 
   .scrolldown .scroll-icon {
@@ -1883,6 +1882,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   text-align: left;
 }
 
+#about .web:hover {
+  color: #6f2232 !important;
+}
+
 #img {
   width: 30%;
   border-radius: 50%;
@@ -1900,33 +1903,15 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   padding: 0;
 }
 
+.button:hover {
+  color: #E3AFBD !important;
+}
+
 /* Clear floats after the columns */
 .r:after {
   content: "";
   display: table;
   clear: both;
-}
-
-button {
-  font-size: 1.5rem;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  display: block;
-  letter-spacing: .2rem;
-  height: 6rem;
-  line-height: 6rem;
-  padding: 0 3rem;
-  width: 30%;
-  background: #336F70;
-  color: #EDA953;
-  border-radius: 12px;
-  margin: 0 auto;
-  margin-top: .6rem;
-}
-
-button:hover {
-  background-color: #522A44;
-  color: #E3AFBD;
 }
 
 /* -------------------------------------------------------------------
@@ -1949,7 +1934,7 @@ button:hover {
     letter-spacing: 150% !important;
     line-height: 1.1;
     color: #522A44;
-    margin-top: 5px;
+    margin-top: 0;
     width: 100%;
     text-align: left;
   }
@@ -1988,7 +1973,10 @@ button:hover {
     max-width: 720px;
   }
   #about .lead {
-    font-size: 3.6rem;
+    font-size: 2.5rem;
+  }
+  #about .lead2 {
+    font-size: 2rem;
   }
   .r {
     display: block;
@@ -2012,7 +2000,10 @@ button:hover {
     max-width: 600px;
   }
   #about .lead {
-    font-size: 3.1rem;
+    font-size: 2.5rem;
+  }
+  #about .lead2 {
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2363,6 +2354,91 @@ button:hover {
   #services .services-list .icon i {
     font-size: 5.1rem;
   }
+
+  .column2 {
+    height: 190px;
+  }
+
+  .column7 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 190px;
+  }
+
+  .column8 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 240px;
+  }
+
+  .column9 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 190px;
+  }
+
+  .column10 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 210px;
+  }
+
+  .column11 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 210px;
+  }
+
+  .column12 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 210px;
+  }
+
+  .column13 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    height: 230px;
+  }
+
+  .column3 {
+    float: left;
+    width: 33%;
+    text-align: left;
+    height: 175px;
+    padding: 5px;
+  }
+
+  .column4 {
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 170px;
+    padding: 5px;
+  }
+
+  .column5 {
+    float: left;
+    width: 33%;
+    text-align: right;
+    height: 180px;
+    padding: 5px;
+  }
+
+  .column6 {
+    float: none;
+    width: 40%;
+    text-align: left;
+    height: 0;
+    padding: 5px;
+  }
 }
 @media only screen and (max-width: 600px) {
   #services .services-list .service-item {
@@ -2485,7 +2561,7 @@ button:hover {
     display: block;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 415px) {
   #services .services-list .service-item {
     padding: 0;
   }
@@ -2494,7 +2570,7 @@ button:hover {
     float: left;
     width: 100%;
     text-align: left;
-    height: 260px;
+    height: 310px;
   }
 
   .column2 span {
@@ -2506,49 +2582,49 @@ button:hover {
     float: left;
     width: 100%;
     text-align: left;
-    height: 210px;
+    height: 250px;
   }
 
   .column8 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 290px;
+    height: 320px;
   }
 
   .column9 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 210px;
+    height: 250px;
   }
 
   .column10 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 280px;
+    height: 330px;
   }
 
   .column11 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 250px;
+    height: 280px;
   }
 
   .column12 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 220px;
+    height: 270px;
   }
 
   .column13 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 250px;
+    height: 300px;
   }
 
   .column3 {
@@ -2589,56 +2665,56 @@ button:hover {
     float: left;
     width: 100%;
     text-align: left;
-    height: 310px;
+    height: 340px;
   }
 
   .column7 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 250px;
+    height: 280px;
   }
 
   .column8 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 330px;
+    height: 360px;
   }
 
   .column9 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 280px;
+    height: 310px;
   }
 
   .column10 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 310px;
+    height: 340px;
   }
 
   .column11 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 310px;
+    height: 340px;
   }
 
   .column12 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 250px;
+    height: 280px;
   }
 
   .column13 {
     float: left;
     width: 100%;
     text-align: left;
-    height: 280px;
+    height: 310px;
   }
 
   .column3 {
@@ -2960,14 +3036,24 @@ button:hover {
     height: 42.09em;
   }
 }
-@media only screen and (max-width: 823px) {
+@media only screen and (max-width: 900px) {
+  .mock {
+    height: 36.68em;
+  }
+}
+@media only screen and (max-width: 824px) {
   .mock {
     height: 33.48em;
   }
 }
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 813px) {
   .mock {
-    height: 33.05em;
+    height: 33.03em;
+  }
+}
+@media only screen and (max-width: 801px) {
+  .mock {
+    height: 32.5em;
   }
 }
 @media only screen and (max-width: 768px) {
