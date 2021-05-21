@@ -1893,7 +1893,8 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 .c {
   float: right;
-  width: 50%;
+  width: 47%;
+  margin-top: 100px
   padding: 0;
 }
 
@@ -3840,8 +3841,14 @@ footer h4.h05::after {
     left: 50%;
     margin-left: -50px;
   }
+  .footer-main {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .footer-main {
+    font-size: 11px;
+  }
   .footer-bottom {
     padding-bottom: .6rem;
   }
@@ -3854,6 +3861,6 @@ footer h4.h05::after {
 }
 @media only screen and (max-width: 400px) {
   .footer-main {
-    font-size: 12px;
+    font-size: 8px;
   }
 }
