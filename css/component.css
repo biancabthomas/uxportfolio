@@ -1,5 +1,5 @@
 .grid1 {
-	max-width: 1123px;
+	max-width: 1200px;
 	list-style: none;
 	margin: 0 auto;
 	padding: 0;
@@ -9,7 +9,7 @@
 .grid1 li {
 	display: block;
 	float: left;
-	padding: 0;
+	padding: 10px;
 	width: 33%;
 	opacity: 0;
 }
@@ -68,7 +68,7 @@
 	max-width: 1123px;
 	list-style: none;
 	margin: 0 auto;
-	padding: 0;
+	padding: 10px;
 	clear: both;
 }
 
